@@ -1,0 +1,28 @@
+{
+  "name": "bp_jurica",
+  "version": "1.0.0",
+  "description": "Automatizované UI, E2E a API testy pro WordPress/WooCommerce e-shop v Playwrightu.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:e2e": "playwright test tests/e2e",
+    "test:api": "playwright test tests/api",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "woocommerce",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.0.8"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
