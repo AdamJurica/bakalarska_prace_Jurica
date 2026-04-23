@@ -1,6 +1,6 @@
 # Bakalářský projekt playwright testů
 
-Automatizovaný testovací projekt postavený na Playwrightu pro ověřování WordPress/WooCommerce e-shopu. Repo obsahuje UI testy, end-to-end scénáře i základní API kontroly nad veřejnými i autentizovanými endpointy.
+Automatizovaný testovací projekt postavený na Playwrightu pro ověřování WordPress/WooCommerce e-shopu. Repozitář obsahuje UI testy, end-to-end scénáře i základní API kontroly nad veřejnými i autentizovanými endpointy.
 
 ## Co projekt pokrývá
 
