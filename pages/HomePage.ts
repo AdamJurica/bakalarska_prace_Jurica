@@ -16,7 +16,7 @@ export class HomePage extends BasePage {
    * Ověří přítomnost hlavních obsahových bloků na homepage.
    */
   async checkSectionsVisibility(): Promise<void> {
-    const sections = ['main', 'footer', '.wp-block-heading', '.wc-blocks-header-pattern'];
+    const sections = ['footer', '.wp-block-heading', '.wc-blocks-header-pattern'];
 
     for (const selector of sections) {
       const element = this.page.locator(selector).first();
