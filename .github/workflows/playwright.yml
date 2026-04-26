@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   pull_request:
   schedule:
-    - cron: '0 */12 * * *'   # každých 12 hodin
+    - cron: '0 */4 * * *'   # každých 12 hodin
 
 env:
   WC_CONSUMER_KEY: ${{ secrets.WC_CONSUMER_KEY }}
@@ -49,3 +49,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: playwright-report/
           server-dir: /public_html/playwright-reports/
+          dangerous-clean-slate: true
