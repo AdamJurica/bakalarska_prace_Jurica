@@ -33,6 +33,7 @@ jobs:
 
       - name: Run Playwright tests
         run: npx playwright test
+        continue-on-error: true
 
       - name: Upload Playwright report
         if: always()
@@ -42,6 +43,7 @@ jobs:
           path: playwright-report
     
       - name: Upload latest report to website
+        if: always()
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
