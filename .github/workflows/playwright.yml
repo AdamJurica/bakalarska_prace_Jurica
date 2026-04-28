@@ -8,6 +8,7 @@ on:
     - cron: '0 */4 * * *'   # každých 12 hodin
 
 env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   WC_CONSUMER_KEY: ${{ secrets.WC_CONSUMER_KEY }}
   WC_CONSUMER_SECRET: ${{ secrets.WC_CONSUMER_SECRET }}
   BASE_URL: ${{ secrets.BASE_URL }}
